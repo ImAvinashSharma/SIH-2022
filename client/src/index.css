@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@media print { 
+  body {-webkit-print-color-adjust: exact;}
+  #header { display: none;}
+  .phide  { 
+      display: none;
+  }
+}
+@page {
+  margin: 0;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  margin-left: 10%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.dot {
+  width: 24px;
+  height: 24px;
+  background: #3ac;
+  border-radius: 100%;
+  display: inline-block;
+  animation: slide 1s infinite;
+}
+.dot:nth-child(1) {
+  animation-delay: 0.1s;
+  background: #32aacc;
+}
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+  background: #64aacc;
+}
+.dot:nth-child(3) {
+  animation-delay: 0.3s;
+  background: #96aacc;
+}
+.dot:nth-child(4) {
+  animation-delay: 0.4s;
+  background: #c8aacc;
+}
+.dot:nth-child(5) {
+  animation-delay: 0.5s;
+  background: #faaacc;
+}
+@-moz-keyframes slide {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-o-keyframes slide {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
